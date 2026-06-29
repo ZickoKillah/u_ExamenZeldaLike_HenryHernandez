@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c386a711ffca94b4d82a630eea54ca8b, type: 3}
+  m_Name: Boss
+  m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
+  narrativeText: "El personaje intenta adivinar para qu\xE9 ocupaban ese altar. No
+    parece estar creado para ninguna divinidad. No era un altar de oraci\xF3n. Aparece
+    el Golem: 'T\xFA no eres mi amo... Destruir, destruir."
+  triggerType: 2
