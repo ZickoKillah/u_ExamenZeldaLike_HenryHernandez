@@ -44,10 +44,17 @@ public class SpikeTrap : MonoBehaviour, IActivatable
     private void OnTriggerStay(Collider other)
     {
         if (!isActive) return;
-        if (other.CompareTag("Player"))
+    
+        // --- Logs de diagnóstico ---
+        Debug.Log($"Trampa activa - Detectado: {other.name}");
+        IDamageable damageable = other.GetComponent<IDamageable>();
+        Debug.Log($"¿Tiene IDamageable? {damageable != null}");
+        // -------------------------
+    
+        if (other.CompareTag("Player") && damageable != null)
         {
-            IDamageable damageable = other.GetComponent<IDamageable>();
-            damageable?.TakeDamage(damage * Time.deltaTime);
+            damageable.TakeDamage(damage * Time.deltaTime);
+            Debug.Log($"Aplicando daño: {damage * Time.deltaTime}");
         }
     }
 }
