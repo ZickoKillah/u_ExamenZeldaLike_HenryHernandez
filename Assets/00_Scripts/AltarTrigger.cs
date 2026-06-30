@@ -49,14 +49,15 @@ public class AltarTrigger : MonoBehaviour, Interactuable
             golem.SetActive(true);
         if (bossHealthBar != null)
             bossHealthBar.SetActive(true);
+        InputHandler.instance.canUseInput = true;
+        Debug.Log("¡Comienza la batalla contra el Golem!");
 
         // --- Diálogo 2: Amenaza del Golem ---
         if (golemDialog != null)
             UIManager.Instance.ShowDialogueForSeconds(golemDialog.narrativeText, 3f);
         yield return new WaitForSeconds(3.5f);
 
-        // --- Devolver el control al jugador ---
-        InputHandler.instance.canUseInput = true;
-        Debug.Log("¡Comienza la batalla contra el Golem!");
+        
+        
     }
 }
