@@ -93,7 +93,7 @@ public class Boss : Enemy
         }
         
 
-        // Ataque especial en Fase 2 (ya lo tienes)
+        // Ataque especial en Fase 2 
         if (isPhase2 && Time.time - lastSpecialAttackTime >= specialAttackCooldown)
         {
             StartCoroutine(PerformSpecialAttack());

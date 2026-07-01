@@ -78,7 +78,7 @@ public class Enemy : Entity
     // --- Comportamientos (virtuales para que Archer/Boss los sobrescriban) ---
     protected virtual void IdleBehaviour()
     {
-        // Opcional: patrullaje aquí
+        // Patrullaje aquí
     }
 
     protected virtual void ChasePlayer()
@@ -163,7 +163,7 @@ public class Enemy : Entity
 
         for (int i = 0; i < soulsToDrop; i++)
         {
-            // Posición aleatoria alrededor del enemigo (radio de 1 metro)
+            // Posición aleatoria alrededor del enemigo 
             Vector3 randomOffset = Random.insideUnitSphere * 1.5f;
             randomOffset.y = 0.5f; // Para que queden sobre el suelo
             Vector3 dropPosition = transform.position + randomOffset;

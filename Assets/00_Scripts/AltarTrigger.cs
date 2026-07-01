@@ -30,7 +30,7 @@ public class AltarTrigger : MonoBehaviour, Interactuable
             UIManager.Instance.ShowDialogueForSeconds(altarDialog.narrativeText, 4f);
         yield return new WaitForSeconds(4.5f); // El tiempo del diálogo + 0.5s de pausa
 
-        // --- Pausa para la cinemática (simulada por ahora) ---
+        // --- Pausa para la cinemática 
         altarSphere?.SetActive(false); // La esfera del altar desaparece
         Debug.Log("Cinemática: El Golem se está ensamblando...");
         if (bossDirector != null)

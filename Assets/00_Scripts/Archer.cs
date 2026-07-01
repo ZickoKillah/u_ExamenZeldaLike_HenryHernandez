@@ -15,7 +15,7 @@ public class Archer : Enemy
     {
         base.Start();
         attackRange = 8f;
-        animator = GetComponent<Animator>(); // Caché
+        animator = GetComponent<Animator>(); 
     }
 
     protected override void AttackBehaviour()
@@ -110,7 +110,7 @@ public class Archer : Enemy
             }
         }
 
-        // Espera la duración del ataque (ajusta según tu animación)
+        // Espera la duración del ataque 
         yield return new WaitForSeconds(0.5f);
 
         // --- NUEVO: Desactivar animación de ataque ---

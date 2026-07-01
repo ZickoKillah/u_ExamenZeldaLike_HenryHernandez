@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroCinematic.unity
     guid: 034e8f0122f5d4549ba25c7a2057eb62
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainDungeon.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ecdbf7e6a8fee814daf9839a49daa5ac, type: 2}
