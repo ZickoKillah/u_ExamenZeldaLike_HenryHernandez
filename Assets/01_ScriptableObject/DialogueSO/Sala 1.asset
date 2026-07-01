@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c386a711ffca94b4d82a630eea54ca8b, type: 3}
   m_Name: Sala 1
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
-  narrativeText: "Un cartel dice: \"Este es el templo de la Encarnaci\xF3n\"  Parece
-    abandonado hace tiempo, pero  la magia en \xE9l a\xFAn parece funcionar."
+  narrativeText: Escuchas  que se abre una puerta a lo lejos...
   triggerType: 0

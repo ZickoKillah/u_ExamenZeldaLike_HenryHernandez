@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c386a711ffca94b4d82a630eea54ca8b, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
-  narrativeText: "El personaje intenta adivinar para qu\xE9 ocupaban ese altar. No
-    parece estar creado para ninguna divinidad. No era un altar de oraci\xF3n. Aparece
-    el Golem: 'T\xFA no eres mi amo... Destruir, destruir."
+  narrativeText: PROBANDOOO
   triggerType: 2

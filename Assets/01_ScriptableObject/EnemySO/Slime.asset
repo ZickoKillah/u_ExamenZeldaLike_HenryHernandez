@@ -18,4 +18,5 @@ MonoBehaviour:
   speed: 5
   attackRange: 6
   attackCooldown: 1.5
-  enemyType: 0
+  enemyType: 1
+  soulsToDrop: 5

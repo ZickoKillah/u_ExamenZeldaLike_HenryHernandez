@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: LlaveBoss
   itemType: 0
   icon: {fileID: 0}
-  pickupMessage: Parece ser la llave del jefe
+  pickupMessage: Parece ser la llave de la puerta roja
   effectValue: 0

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c386a711ffca94b4d82a630eea54ca8b, type: 3}
   m_Name: Sala  2
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
-  narrativeText: 
+  narrativeText: A lo lejos oyes  una puerta abrirse...
   triggerType: 0

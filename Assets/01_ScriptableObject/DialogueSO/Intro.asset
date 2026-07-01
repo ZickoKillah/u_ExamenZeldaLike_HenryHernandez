@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c386a711ffca94b4d82a630eea54ca8b, type: 3}
   m_Name: Intro
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
-  narrativeText: "Acabas de entrar en el tempo de un planeta que  hace mucho  est\xE1
-    deshabitado, llamado Zoion. Se cuenta que este mundo fue creado  por el Dios
-    de la Vida, pero tuvo un tr\xE1gico final."
+  narrativeText: Presiona "WASD" para moverte           y la tecla "E" para interactuar.
   triggerType: 0

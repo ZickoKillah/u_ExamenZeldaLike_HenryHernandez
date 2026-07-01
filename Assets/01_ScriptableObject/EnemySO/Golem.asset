@@ -19,3 +19,4 @@ MonoBehaviour:
   attackRange: 3
   attackCooldown: 1.5
   enemyType: 2
+  soulsToDrop: 30
