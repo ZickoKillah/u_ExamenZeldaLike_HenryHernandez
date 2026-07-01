@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: AlmaCurrency
   itemType: 3
   icon: {fileID: 0}
-  description: 
+  pickupMessage: Sientes el poder del alma de mil guerreros
   effectValue: 100

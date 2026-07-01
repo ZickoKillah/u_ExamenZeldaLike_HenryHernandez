@@ -65,6 +65,7 @@ public class PlayerController : TopDownCharacterController, IDamageable, IHealab
     {
         inventory.Add(item);
         Debug.Log($"Item recogido: {item.itemName}");
+        EventBus.InvokeOnItemCollected(item);
 
         if (item.itemType == ItemType.Key)
             UIManager.Instance.UpdateKeyCount(KeyCount);

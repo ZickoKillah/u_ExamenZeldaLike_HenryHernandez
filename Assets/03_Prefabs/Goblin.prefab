@@ -308,6 +308,8 @@ GameObject:
   - component: {fileID: 190408008087754581}
   - component: {fileID: 7483034670675121371}
   - component: {fileID: 8806855418909131578}
+  - component: {fileID: 3936974927628908708}
+  - component: {fileID: 1862508814515141537}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -324,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 2873992108232961630}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0, z: 6}
+  m_LocalPosition: {x: 4.42, y: 0, z: 12.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -346,13 +348,13 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.76
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 8
   m_ObstacleAvoidanceType: 4
 --- !u!114 &2515865843326475374
 MonoBehaviour:
@@ -366,16 +368,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe447b9fd05f9e4cbf9cdf844a61cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Goblin
-  maxHealth: 100
+  maxHealth: 20
   currentHealth: 0
   navMeshAgent: {fileID: 4117332402089025509}
-  player: {fileID: 0}
+  player: {fileID: 7912479641536854272, guid: 1a5c6b2aea3a0df438a362fa46b94f62, type: 3}
   attackComponent: {fileID: 7483034670675121371}
   currentState: 0
-  enemyData: {fileID: 0}
+  enemyData: {fileID: 11400000, guid: ef0e6bda683d7ce4c83893c13bc66a53, type: 2}
   attackRange: 2
   potionPrefab: {fileID: 5573780309770956504, guid: 56c6ca7f183b1ec45878f8d5a35a6943, type: 3}
-  potionDropChance: 0.3
+  potionDropChance: 0.208
   soulPrefab: {fileID: 7098217172720731225, guid: 60d3d681be8b3d64d91b017e1b04b1d2, type: 3}
   soulDropChance: 1
 --- !u!135 &190408008087754581
@@ -411,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74dc1851d8152394383f58fe5c5fca45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Attack
-  damage: 2
+  damage: 1
   damageCollider: {fileID: 5670529017408934972}
   attackCooldown: 0.6
 --- !u!114 &8806855418909131578
@@ -428,6 +430,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimationCharacter
   animator: {fileID: 779545310641987650}
   isAttacking: 0
+--- !u!54 &3936974927628908708
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873992108232961630}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1862508814515141537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873992108232961630}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.76006925, y: 0.92029566, z: 0.38541412}
+  m_Center: {x: -0.0046398044, y: 0.2788615, z: -0.026384354}
 --- !u!1 &3034791029901899068
 GameObject:
   m_ObjectHideFlags: 0

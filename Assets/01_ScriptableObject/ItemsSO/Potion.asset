@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: Refreshing  Potion
   itemType: 1
   icon: {fileID: 0}
-  description: 
+  pickupMessage: "Una poci\xF3n, apreta \"Q\" para usarla"
   effectValue: 4

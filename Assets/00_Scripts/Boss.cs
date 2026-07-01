@@ -31,7 +31,7 @@ public class Boss : Enemy
             Debug.Log("Moviendo Golem hacia: " + player.position);
         }
         // El Golem tiene más vida y ataque que un enemigo normal
-        maxHealth = 200f;
+        maxHealth = 300f;
         currentHealth = maxHealth;
         attackRange = 3f;
         if (navMeshAgent != null)

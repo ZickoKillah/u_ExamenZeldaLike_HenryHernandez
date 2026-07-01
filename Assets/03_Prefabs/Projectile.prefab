@@ -154,5 +154,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 2
-  lifetime: 5
+  lifetime: 6
   destroyOnHit: 1
