@@ -21,12 +21,13 @@ public class LockedDoor : DoorController, Interactuable
         if (player.HasKey())
         {
             Debug.Log(messageOpen);
+            UIManager.Instance.ShowDialogueForSeconds(messageOpen, 2f);
             base.OpenDoor(); // Llama al método del padre que desactiva la puerta
         }
         else
         {
             Debug.Log(messageNoKey);
-            // Aquí podrías llamar a UIManager para mostrar el texto en pantalla
+            UIManager.Instance.ShowDialogueForSeconds(messageNoKey, 2f);
         }
     }
 }

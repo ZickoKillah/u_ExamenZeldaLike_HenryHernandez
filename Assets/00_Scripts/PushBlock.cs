@@ -50,7 +50,7 @@ public class PushBlock : MonoBehaviour, Interactuable
 
         while (elapsed < duration)
         {
-            // Movemos el Rigidbody, no el Transform
+            // Movemos el Rigidbody, no el Transform, porque  generaba errores "teletransportantes"
             rb.MovePosition(Vector3.Lerp(startPos, endPos, elapsed / duration));
             elapsed += Time.deltaTime;
             yield return null;

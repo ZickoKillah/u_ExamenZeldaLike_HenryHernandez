@@ -7,7 +7,7 @@ public class SpikeTrap : MonoBehaviour, IActivatable
     [SerializeField] private float activeDuration = 2f;
     [SerializeField] private float inactiveDuration = 2f;
     [SerializeField] private float damage = 10f;
-    [SerializeField] private GameObject spikeModel; // El hijo visual (los pinchos)
+    [SerializeField] private GameObject spikeModel; // El hijo visual
 
     private bool isActive = false;
     private Coroutine trapCycle;
@@ -52,8 +52,8 @@ public class SpikeTrap : MonoBehaviour, IActivatable
         // -------------------------
     
         if (other.CompareTag("Player") && damageable != null)
-        {
-            damageable.TakeDamage(damage * Time.deltaTime);
+        {                                                      //Debo gestionar el cambio de la health a float del player.
+            damageable.TakeDamage(damage * Time.deltaTime);  //daño es proporción a los frames y no en unidades 
             Debug.Log($"Aplicando daño: {damage * Time.deltaTime}");
         }
     }

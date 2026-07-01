@@ -28,7 +28,7 @@ public abstract class Entity : MonoBehaviour, IDamageable
     protected virtual void Die()
     {
         Debug.Log($"{gameObject.name} ha muerto.");
-        // Aquí se notificará al RoomManager mediante EventBus
+        
         Destroy(gameObject);
     }
 }

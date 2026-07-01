@@ -5,11 +5,11 @@ public class PickupItem : MonoBehaviour, ICollectable
 {
     [Header("Configuración del Ítem")]
     [SerializeField] private ItemDataSO itemData;
-    [SerializeField] private bool destroyOnCollect = true; // ¿Desaparece al recogerse?
+    [SerializeField] private bool destroyOnCollect = true; // Desaparece al recogerse
 
     public void Collect()
     {
-        // Buscamos al jugador (asumimos que tiene PlayerController)
+        // Buscamos al jugador 
         PlayerController player = FindFirstObjectByType<PlayerController>();
         if (player != null)
         {

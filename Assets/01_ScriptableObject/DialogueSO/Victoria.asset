@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Victoria
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeEventSO
   narrativeText: "Parece haberse movido algo en el altar... Gracias a tu valent\xEDa,
-    el Templo de la Encarnaci\xF3n ha revelado un secreto olvidado."
+    el Templo de la Encarnaci\xF3n ha revelado un secreto olvidado... el n\xFAcleo
+    debe estar  m\xE1s adelante."
   triggerType: 3

@@ -17,8 +17,7 @@ public class BossHealthBar : MonoBehaviour
     {
         if (healthFillImage != null && maxHealth > 0)
         {
-            // Asumimos que maxHealth está guardado en el Boss, o lo pasamos como parámetro
-            // Por simplicidad, lo normalizaremos desde el Boss
+            
             healthFillImage.fillAmount = currentHealth / 300f; // Ajusta el máximo según tu Golem
         }
     }

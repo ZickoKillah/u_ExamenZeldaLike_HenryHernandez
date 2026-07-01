@@ -105,7 +105,7 @@ public class Boss : Enemy
         // Activamos el collider del puño
         meleeCollider.enabled = true;
 
-        // Aquí podrías reproducir animación de golpe con Animator (opcional)
+        // Aquí reproducir animación de golpe con Animator (opcional)
         Debug.Log("Golem golpea");
 
         yield return new WaitForSeconds(0.3f); // Duración del golpe
@@ -127,7 +127,7 @@ public class Boss : Enemy
                 areaScript.owner = gameObject;
             }
         }
-        yield return new WaitForSeconds(0.5f); // Tiempo de anticipación antes del daño
+        yield return new WaitForSeconds(1.5f); // Tiempo de anticipación antes del daño
     }
 
     protected override void Die()

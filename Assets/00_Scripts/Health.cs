@@ -20,7 +20,7 @@ public class Health : MonoBehaviour, IDamageable
     }
     private void Die()
     {
-        // Aquí puedes agregar animaciones de muerte, efectos, etc.
+        
         Debug.Log($"{gameObject.name} ha muerto.");
         Destroy(gameObject);
     }
